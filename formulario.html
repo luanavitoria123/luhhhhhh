@@ -1,0 +1,22 @@
+<!-- Formulário de Avaliação -->
+<div class="form-avaliacao">
+    <h3>Deixe sua Avaliação</h3>
+    <form action="enviar-avaliacao.php" method="POST">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="avaliacao">Sua Avaliação (1 a 5 estrelas):</label>
+        <select id="avaliacao" name="avaliacao" required>
+            <option value="1">1 Estrela</option>
+            <option value="2">2 Estrelas</option>
+            <option value="3">3 Estrelas</option>
+            <option value="4">4 Estrelas</option>
+            <option value="5">5 Estrelas</option>
+        </select>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+</div>
